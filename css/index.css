@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+  }
+  header {
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: #010675;
+    font-family: ovo;
+    font-size: 24px;
+  }
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  h1 {
+    font-family: 'Ovo', serif;
+    font-size: 36px;
+    color: #013F35; 
+    margin: 20px;
+  }
+  h2 {
+    font-family: 'Ovo', serif;
+    font-size: 28px;
+    color: #013F35; 
+    margin: 50px;
+  }
+  p {
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    color: #F0F2A6;
+  }
+  .heroImg {
+    padding: 15px;
+  }
+  .headshot {
+    width: 300px;
+  }
+  .heroContent {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(143, 192, 169, 0.5);
+    text-align: center;
+    color: #010675;
+    border-radius: 25px;
+  }
+  .heroContent p {
+    color: #010675;
+  }
+  button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    background-color: rgb(143, 192, 169, 0.5);
+  }
+  .flexContainer p {
+    color: #F0F2A6;
+  }
+  #userResearch {
+    width: 33%;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+    background-color: #013F35;
+    color: #F0F2A6;
+  }
+  #userInterface {
+    width: 33%;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+    background-color: #013F35;
+    color: #F0F2A6;
+  }
+  #webDevelopment {
+    width: 33%;
+    margin: 1%;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+    background-color: #013F35;
+    color: #F0F2A6;
+  }
+  .myWork {
+    margin-bottom: 50px;
+  }
+  h3 {
+    color: #8FC0A9;
+    font-family: Ovo;
+    font-size: 24px;
+    text-align: center;
+  }
+  h4 {
+    color: #FAC9B8;
+    font-family: Ovo;
+    font-size: 24px;
+  }
+  .workGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    'shopHopImg shopHopText' 
+    'tapAtlImg tapAtlText' 
+    'weatherGovImg weatherGovText'; 
+  }
+  .work .shopHop {
+    grid-area: shopHopImg;
+    text-align: right;
+  }
+  .work .tapAtl {
+    grid-area: tapAtlImg;
+    background-image: url("/images/ShopHop_Icon.png");
+  }
+  .work .weatherGov {
+    grid-area: weatherGovImg;
+  }
+  .content .shopHop {
+    grid-area: shopHopText;
+    text-align: left;
+  }
+  .content .tapAtl {
+    grid-area: tapAtlText;
+    text-align: left;
+  }
+  .content .weatherGov {
+    grid-area: weatherGovText;
+    text-align: left;
+  }
+  .work {
+    width: 300px;
+  }
+  .content {
+    text-align: left;
+    background-color: #013F35;
+    max-width: 500px;
+    color: #F0F2A6;
+    padding: 20px;
+    margin: 1%;
+  }
+  button {
+    background-color: #FAC9B8;
+    font-family: 'Ovo', serif;
+    color: #013F35; 
+    font-size: 20px;
+    padding: 12px;
+    align-items: center;
+    outline-color:  #013F35;
+    margin: 15px;
+  }
+  footer {
+    background-color: white;
+    padding: 5px;
+    margin-top: 50px;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+    font-family: 'Ovo', serif;
+    color: #010675;
+    font-size: 24px;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  @media only screen and (max-width: 600px) {
+    .flexContainer {
+      display: flex;
+      flex-direction: column;
+      margin: 5%;
+      background-color: rgb(143, 192, 169, 0.5);
+    }
+    .workGrid {
+      display: grid;
+      grid-template-rows: 500px 500px 500px 500px 500px 500px;
+      grid-template-columns: 1fr;
+      grid-template-areas:  
+      'shopHopImg' 
+      'shopHopText' 
+      'tapAtlImg' 
+      'tapAtlText' 
+      'weatherGovImg' 
+      'weatherGovText';
+    }
+  }
